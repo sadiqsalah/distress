@@ -1,0 +1,35 @@
+#distressButton-container {
+	width: 95%;
+	margin: 0 auto;
+	padding: 1em;
+	text-align: center;
+}
+
+#distressButton-call {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 1em;
+	color: #fff;
+
+	background-size: 200% 100%;
+	background-image: linear-gradient(to right, #066ea8 50%, red 50%);
+	-webkit-transition: background-position 3s;
+	-moz-transition: background-position 3s;
+	transition: background-position 3s ease-in;
+}
+
+#distressButton-call.press {
+    background-position: -100% 0;
+}
+
+#distressSent {
+  color: red;
+  font-size: 3rem;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+#distressSent.sent {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+}
